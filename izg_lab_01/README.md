@@ -1,4 +1,6 @@
-# Navod ke kompilaci
+# Cvičení č. 1 - Redukce barevného prostoru
+
+## Navod ke kompilaci
 - Ke kompilaci je pozadovano Visual Studio 2019 nebo GCC 7.0.0+ a CMake 3.12.0+
 
 ## Linux
