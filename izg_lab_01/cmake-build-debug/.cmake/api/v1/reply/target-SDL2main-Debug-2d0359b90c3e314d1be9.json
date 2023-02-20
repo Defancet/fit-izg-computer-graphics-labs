@@ -1,0 +1,109 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "SDL/libSDL2maind.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_dependencies",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"SDL/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3029,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 3030,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3033,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -idirafter \"C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/SDL/src/video/khronos\"  -Wall -fno-strict-aliasing -Werror=declaration-after-statement -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -fdiagnostics-color=always -mmmx -m3dnow -msse -msse2 -msse3  -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MINOR_VERSION=24 -DSDL_BUILD_MICRO_VERSION=2 -g -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/SDL/include-config-debug"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/SDL/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "sdl_headers_copy::@e7c329919722962a2ad4"
+		}
+	],
+	"id" : "SDL2main::@e7c329919722962a2ad4",
+	"name" : "SDL2main",
+	"nameOnDisk" : "libSDL2maind.a",
+	"paths" : 
+	{
+		"build" : "SDL",
+		"source" : "SDL"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "SDL/src/main/windows/SDL_windows_main.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

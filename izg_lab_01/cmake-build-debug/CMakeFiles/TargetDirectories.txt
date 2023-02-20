@@ -1,0 +1,10 @@
+C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/CMakeFiles/izg_lab_01.dir
+C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/SDL/CMakeFiles/sdl_headers_copy.dir
+C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/SDL/CMakeFiles/SDL2main.dir
+C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/SDL/CMakeFiles/SDL2-static.dir
+C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/SDL/CMakeFiles/SDL2_test.dir
+C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/SDL/CMakeFiles/uninstall.dir
+C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/SDL/CMakeFiles/edit_cache.dir
+C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_01c/cmake-build-debug/SDL/CMakeFiles/rebuild_cache.dir
