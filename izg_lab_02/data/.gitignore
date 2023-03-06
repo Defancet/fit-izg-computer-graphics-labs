@@ -1,0 +1,6 @@
+!.gitignore
+!model.obj
+!model_decimated.obj
+!cuboctahedron.obj
+!image.bmp
+!lines.txt

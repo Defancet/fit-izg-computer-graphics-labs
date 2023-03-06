@@ -1,7 +1,7 @@
-# Cvičení č. 1 - Redukce barevného prostoru
+# Exercise #1 - Color space reduction
 
-## Navod ke kompilaci
-- Ke kompilaci je pozadovano Visual Studio 2019 nebo GCC 7.0.0+ a CMake 3.12.0+
+## Instructions for compilation
+- Visual Studio 2019 or GCC 7.0.0+ and CMake 3.12.0+ are required to compile
 
 ## Linux
 - mkdir build
@@ -9,16 +9,16 @@
 - cmake ..
 - make -j 4
 
-V případě problémů se spuštěním zkontrolujte, zda máte požadované závislosti pro renderování pomocí SDL, zejména ověřte aktuálnost grafických ovladačů. SDL není potřeba instalovat, je přibaleno ke kostře programu. Kompletní závislosti pro Ubuntu 20.04 lze nalézt zde:
+In case of startup problems, check that you have the required dependencies for rendering with SDL, especially make sure your graphics drivers are up to date. SDL does not need to be installed, it is bundled with the program framework. Complete dependencies for Ubuntu 20.04 can be found here:
 
 https://packages.ubuntu.com/en/source/focal/libsdl2
 
-Většina balíčků je již součástí základního systému, překladače či grafického ovladače, avšak na některých distribucích mohou některé chybět a způsobovat pády.
+Most of the packages are already part of the base system, compiler or graphics driver, but some may be missing on some distributions and cause crashes.
 ## Windows
-- Spuste CMake GUI
-- Stistknete Browse Source a vyberte slozku s rozbalenym cvicenim
-- Stistknete Browse Build a vyberte stejnou adresu s priponou build/, tzn. napr. cestaKeSlozce/izg_lab_01/build/
-- Kliknete na Configure
-- Nasledne kliknete na Generate
-- Ve slozce build/ nyni bude soubor izg_lab_01.sln, pres ten spustte Visual Studio
-- Nasledne lze jiz primo sestavit aplikaci a spustit
+- Start the CMake GUI
+- Press Browse Source and select the folder with the unzipped exercise
+- Press Browse Build and select the same address with the extension build/, i.e. e.g. pathToFolder/izg_lab_01/build/
+- Click Configure
+- Then click on Generate
+- In the build/ folder there will now be a file izg_lab_01.sln, run Visual Studio through it
+- Next, the application can be assembled directly and run

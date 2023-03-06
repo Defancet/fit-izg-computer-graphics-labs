@@ -1,5 +1,5 @@
-# Základy počítačové grafiky Cvičení
+# Computer Graphics Principles exercise
 
-- Cílem cvičení je praktické vyzkoušení a ověření znalostí získaných na přednáškách.
-- Cvičení jsou rozdělena na 6 témat.
-- Součástí každého cvičení je samostatný bodovaný úkol.
+- The aim of the exercise is to test and verify the knowledge gained in lectures.
+- Exercise is divided into 6 topics.
+- Part of each exercise is a separate scored task.
