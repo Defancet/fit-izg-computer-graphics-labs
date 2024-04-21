@@ -1,5 +1,0 @@
-C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/CMakeFiles/izg04.dir
-C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/CMakeFiles/studentTests.dir
-C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/CMakeFiles/RUN_TESTS.dir
-C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/CMakeFiles/ZERO_CHECK.dir
