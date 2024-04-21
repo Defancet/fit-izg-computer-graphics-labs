@@ -1,0 +1,245 @@
+/**
+\mainpage Shader Labs
+
+\section assignment Shader Labs assignment
+
+\tableofcontents
+
+\image html src/result.svg "Output of the Lab" width=1000
+
+Your assignment is to use GLSL language and create object/animation that the teacher will asign to you.
+You will use only GLSL language.
+Everything will be procedural.
+The goal of the Lab is to familiarize with the GLSL language in OpenGL / Vulkan. 
+
+\section what You should edit only these files:
+shaders/student.glsl
+
+\section theory Theory
+GLSL is language for describing effects and programming shaders.
+Shader and shader program is code that can be executed on GPU.
+The purpose of a shader is to move with object, color them, create effects, compute physics, ...
+There are several types of shaders:
+<ul>
+<li> <b>Vertex Shader</b> - computes a vertex location. Usually multiplies vertices with matrix.
+<li> <b>Fragment Shader</b> - Also known as pixel shader. Computes fragments. Usually computes color.
+<li> Geometry Shader - computes primitives
+<li> Tessellation Shaders - two shaders for primitive tessellation.
+<li> Compute Shader - for general computation.
+<li> Other shaders - non standardised shaders, extensions (ray-tracing, primitive shaders, ...)
+</ul>
+
+\image html src/rendering_pipeline.svg "Rendering Pipeline / GPU" width=1600
+
+\code{.cpp}
+// Pseodocode that represents GPU
+
+struct InVertex{
+  uint gl_VertexID;// built-in variable in GLSL language - vertex counting number
+  VertexAttribute attribs[16];// user specific attributes
+}
+
+struct OutVertex{
+  vec4 gl_Position;// built-in variable in GLSL - location of vertex in clip-space
+  VertexAttribute attribs[16];// user specific attributes
+}
+
+struct Triangle{
+  OutVertex vertices[3];
+}
+
+Triangle assemblyTriangle(int triangleOffset){
+  Triangle triangle;
+  for(int i=0;i<3;++i){ // loop over triangle vertices
+    InVertex inVertex  = assemblyVertex(triangleOffset+i); // assemble vertec and loads the date from GPU memory
+    triangle.vertices[i] = call(vertexShader,inVertex); // run vertex shader on input vertex
+  }
+  return triangle;
+}
+
+void drawTriangles(uint nofVertices){
+  for(int t=0;t<nofVertices;t+=3){// loop over all vertices / all triangles
+    Triangle triangle = assemblyTriangle(t); // assembly a triangle
+
+    InFragments*fragments = nullptr;
+    int nofFragments = 0;
+    rasterize(fragments,nofFragments,triangle); // rasterize the triangle
+
+    for(int  i=0;i<nofFragments;++i)
+      OutFragment outFragment = call(fragmentShader,fragments[i]);
+      writeTo(frameBuffer,outFragment);
+  }
+}
+\endcode
+
+
+\section how How to do it:
+The archive contains pre built Linux and Windows binaries.<br>
+Archiv obsahuje zkopilované binárky pro Linux a pro Windows (shader_lab_linux.bin, shader_lab_windows.exe).<br>
+If you can launch these binary, you don't have to compile anything!<br>
+If you cannot launch pre built binary, you have to compile the app by yourself, see \ref compilation.<br>
+The application draws triangles (calls the commands glDrawArrays).<br>
+Shaders inside "shaders/student.glsl" are executed. <br>
+File student.glsl contains section of vertex shader and framgment shader marked with preprocessor.<br>
+You have to implement given effect/object/animation.<br>
+You have in your disposal the counting number of vertex: "gl_VertexID".<br>
+You can use this number to compute triangles and colors.<br>
+Use attached shaders as an inspiration (directory shaders/).<br>
+GLSL language specification: <a href="https://www.khronos.org/registry/OpenGL/specs/gl/GLSLangSpec.4.60.pdf">GLSL</a><br>
+If you make a mistake, pop-up error message will be shown.<br>
+Vertex shader is executed on every vertex, it's purpose is to compute correct location.<br>
+Fragment shader is executed on every fragment, it's purpose is to compute color.<br>
+The application is rendering quite a lot of triangles, you just need to use few of them and the rest can be degenerated to zero (setting gl_Position=vec4(0)).<br>
+
+\section launching Launching
+
+The application supports multiple command line arguments, use <b> -h </b> for the list.
+- <b>\-\-shader shaders/box.glsl</b> selects the shader
+- <b>\-\-triangles 30</b> number of triangles
+- <b>\-\-version "300 es"</b> GLSL version (used only on Intel GPU)
+- <b>and more...</b><br>
+Vyzkoušejte si
+\code{.sh}
+./izg_lab06_linux.bin --shader shaders/00_empty.glsl 
+./izg_lab06_linux.bin --shader shaders/01_triangle.glsl 
+./izg_lab06_linux.bin --shader shaders/02_triangle3D.glsl 
+./izg_lab06_linux.bin --shader shaders/03_function.gls 
+./izg_lab06_linux.bin --shader shaders/04_vectors.glsl 
+./izg_lab06_linux.bin --shader shaders/05_array.glsl 
+./izg_lab06_linux.bin --shader shaders/06_box.glsl 
+./izg_lab06_linux.bin --shader shaders/07_fullScreenQuad.glsl 
+./izg_lab06_linux.bin --shader shaders/08_fragCoord.glsl 
+./izg_lab06_linux.bin --shader shaders/09_fragCoord3D.glsl 
+./izg_lab06_linux.bin --shader shaders/10_attribs.glsl 
+./izg_lab06_linux.bin --shader shaders/11_uv.glsl 
+./izg_lab06_linux.bin --shader shaders/12_chess.glsl 
+./izg_lab06_linux.bin --shader shaders/13_japanTexture.glsl 
+./izg_lab06_linux.bin --shader shaders/14_japanFlag.glsl 
+./izg_lab06_linux.bin --shader shaders/15_two_materials.glsl 
+./izg_lab06_linux.bin --shader shaders/16_time.glsl 
+./izg_lab06_linux.bin --shader shaders/17_korea.glsl 
+./izg_lab06_linux.bin --shader shaders/18_sphere.glsl 
+./izg_lab06_linux.bin --shader shaders/19_house.glsl 
+./izg_lab06_linux.bin --shader shaders/student.glsl 
+\endcode
+
+\section control Control
+The application is controlled using a mouse:
+- Left mouse button + mouse motion - camera rotation
+- Right mouse button + mouse motion - camera zoom
+- Middle mouse button + mouse motion - camera panning
+And keyboard:
+- r - reload shader
+
+\section examples Examples
+
+\subsection e00 00_empty.glsl
+\image html src/00.png "" width=500
+\include{lineno} shaders/00_empty.glsl
+
+\subsection e01 01_triangle.glsl
+\image html src/01.png "" width=500
+\include{lineno} shaders/01_triangle.glsl
+
+\subsection e02 02_triangle3D.glsl
+\image html src/02.png "" width=500
+\include{lineno} shaders/02_triangle3D.glsl
+
+\subsection e03 03_function.glsl
+\image html src/03.png "" width=500
+\include{lineno} shaders/03_function.glsl
+
+\subsection e04 04_vectors.glsl
+\image html src/04.png "" width=500
+\include{lineno} shaders/04_vectors.glsl
+
+\subsection e05 05_array.glsl
+\image html src/05.png "" width=500
+\include{lineno} shaders/05_array.glsl
+
+\subsection e06 06_box.glsl
+\image html src/06.png "" width=500
+\include{lineno} shaders/06_box.glsl
+
+\subsection e07 07_fullScreenQuad.glsl
+\image html src/07.png "" width=500
+\include{lineno} shaders/07_fullScreenQuad.glsl
+
+
+\subsection e08 08_fragCoord.glsl
+\image html src/08.png "" width=500
+\include{lineno} shaders/08_fragCoord.glsl
+
+\subsection e09 09_fragCoord3D.glsl
+\image html src/09.png "" width=500
+\include{lineno} shaders/09_fragCoord3D.glsl
+
+\subsection e10 10_attribs.glsl
+\image html src/10.png "" width=500
+\include{lineno} shaders/10_attribs.glsl
+
+\subsection e11 11_uv.glsl
+\image html src/11.png "" width=500
+\include{lineno} shaders/11_uv.glsl
+
+\subsection e12 12_chess.glsl
+\image html src/12.png "" width=500
+\include{lineno} shaders/12_chess.glsl
+
+\subsection e13 13_japanTexture.glsl
+\image html src/13.png "" width=500
+\include{lineno} shaders/13_japanTexture.glsl
+
+\subsection e14 14_japanFlag.glsl
+\image html src/14.png "" width=500
+\include{lineno} shaders/14_japanFlag.glsl
+
+\subsection e15 15_two_materials.glsl
+\image html src/15.png "" width=500
+\include{lineno} shaders/15_two_materials.glsl
+
+\subsection e16 16_time.glsl
+\image html src/16.png "" width=500
+\include{lineno} shaders/16_time.glsl
+
+\subsection e17 17_korea.glsl
+\image html src/17.png "" width=500
+\include{lineno} shaders/17_korea.glsl
+
+\subsection e18 18_sphere.glsl
+\image html src/18.png "" width=500
+\include{lineno} shaders/18_sphere.glsl
+
+\subsection e19 19_house.glsl
+\image html src/19.png "" width=500
+\include{lineno} shaders/19_house.glsl
+
+\section compilation Compilation:
+Do this if nothing else works. You should always try archived binaries first!<br>
+The lab was tested on Ubuntu 20.04 and Visual Studio 2019.
+The lab was tested on NVIDIA, AMD GPUs, and Intel GPUs.
+The lab uses build system cmake <a href="https://cmake.org/">CMAKE</a>.
+CMake is a program that loads config file "CMakeLists.txt" and generates "makefile" for development IDE.
+It can generates makefiles for Linux, mingw, solution files for Microsoft Visual Studio and more<br>
+On Linux:
+\code{.sh}
+# download the archive
+unzip izg_lab06.zip -d izg_lab06
+cd izg_lab06/build
+cmake ..
+make -j8
+./izg_lab06
+./izg_lab06 -h
+./izg_lab06 --tests
+\endcode
+On Windows:
+-# download the archive
+-# extract
+-# run "cmake-gui .." inside build/ directory
+-# or setup "Where is the source code:" to directory containing "CMakeLists.txt"
+-# and "Where to build the binaries: " to "build/" directory
+-# configure
+-# generate
+-# Open generated solution file for Microsoft Visual Studio.
+
+*/

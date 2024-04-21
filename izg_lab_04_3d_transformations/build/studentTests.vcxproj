@@ -1,0 +1,1001 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{194CEB99-69FE-38F6-8E5D-F7E6A838448A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>studentTests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">studentTests.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">studentTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">studentTests.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">studentTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">studentTests.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">studentTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">studentTests.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">studentTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/GTest/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>																	</Message>
+      <Command>setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgDBd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgGAd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgManipulatord.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgUtild.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgViewerd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgTextd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/OpenThreadsd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/zlibd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osg.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgDB.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgGA.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgManipulator.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgUtil.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgViewer.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgText.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/OpenThreads.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/zlib.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgDBd.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgUtild.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgGAd.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgManipulatord.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgViewerd.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgd.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\OpenThreadsd.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\lib\gtestd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug/studentTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Debug/studentTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/GTest/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>																	</Message>
+      <Command>setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgDBd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgGAd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgManipulatord.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgUtild.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgViewerd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgTextd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/OpenThreadsd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/zlibd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osg.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgDB.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgGA.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgManipulator.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgUtil.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgViewer.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgText.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/OpenThreads.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 1 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/zlib.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgDB.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgUtil.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgGA.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgManipulator.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgViewer.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osg.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\OpenThreads.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\lib\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release/studentTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/Release/studentTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/GTest/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>																	</Message>
+      <Command>setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgDBd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgGAd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgManipulatord.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgUtild.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgViewerd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgTextd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/OpenThreadsd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/zlibd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osg.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgDB.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgGA.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgManipulator.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgUtil.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgViewer.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgText.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/OpenThreads.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/zlib.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgDB.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgUtil.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgGA.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgManipulator.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgViewer.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osg.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\OpenThreads.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\lib\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel/studentTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/MinSizeRel/studentTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/GTest/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\src;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\..\include;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>																	</Message>
+      <Command>setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgDBd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgGAd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgManipulatord.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgUtild.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgViewerd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgTextd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/OpenThreadsd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/zlibd.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osg.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgDB.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgGA.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgManipulator.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgUtil.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgViewer.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/osgText.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/OpenThreads.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if 0 neq 0 C:/Users/gmamy/Desktop/bit1/leto/IZG/cmake-3.25.2-windows-x86_64/bin/cmake.exe -E copy_if_different C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/3rdPartyLibs/OSG/bin/zlib.dll C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgDB.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgUtil.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgGA.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgManipulator.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osgViewer.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\osg.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\OSG\lib\OpenThreads.lib;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\3rdPartyLibs\GTest\lib\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo/studentTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/RelWithDebInfo/studentTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04 -BC:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build --check-stamp-file C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindGTest.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindOpenSceneGraph.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindOpenThreads.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindThreads.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Findosg.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgDB.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgGA.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgManipulator.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgUtil.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgViewer.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Findosg_functions.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\GoogleTest.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\CMake\CMakeMarcos.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04 -BC:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build --check-stamp-file C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindGTest.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindOpenSceneGraph.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindOpenThreads.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindThreads.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Findosg.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgDB.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgGA.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgManipulator.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgUtil.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgViewer.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Findosg_functions.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\GoogleTest.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\CMake\CMakeMarcos.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04 -BC:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build --check-stamp-file C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindGTest.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindOpenSceneGraph.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindOpenThreads.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindThreads.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Findosg.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgDB.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgGA.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgManipulator.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgUtil.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgViewer.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Findosg_functions.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\GoogleTest.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\CMake\CMakeMarcos.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04 -BC:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build --check-stamp-file C:/Users/gmamy/Desktop/bit1/leto/IZG/izg_lab_04/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindGTest.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindOpenSceneGraph.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindOpenThreads.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindThreads.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Findosg.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgDB.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgGA.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgManipulator.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgUtil.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindosgViewer.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Findosg_functions.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\GoogleTest.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\CMake\CMakeMarcos.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\3.25.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\tests\CustomListener.h" />
+    <ClCompile Include="C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\tests\tests.cpp" />
+    <ClCompile Include="C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\tests\StudentTests.cpp" />
+    <ClCompile Include="C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\src\Student.cpp" />
+    <ClInclude Include="C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\include\Student.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\gmamy\Desktop\bit1\leto\IZG\izg_lab_04\build\ZERO_CHECK.vcxproj">
+      <Project>{1A02BD61-6D2D-38D4-9795-3D1123CB278D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
